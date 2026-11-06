@@ -1,0 +1,64 @@
+{
+  "engine": {
+    "Render": {
+      "RenderWindow": {
+        "render_w_w": 640,
+        "render_w_h": 480
+      },
+      "ViewWindow": {
+        "view_win_w": 640,
+        "view_win_h": 480,
+        "view_scale_global": 4,
+        "view_scale_action": 4,
+        "start_x": 0,
+        "start_y": 0
+      }
+    },
+    "map": {
+      "properties": {
+        "pixel_width": 272,
+        "pixel_height": 780,
+        "map_columns": 17,
+        "map_rows": 30,
+        "Layer_num": 2
+      },
+      "tilesets": [
+        {
+            "id": "terrain",
+            "image": "gentle_forest_v01.png",
+            "tile_width": 16,
+            "tile_height": 16,
+            "tileset_columns": 16
+        },
+        {
+            "id": "sparkles",
+            "image": "gentle_water_sparkles_A_v01.png",
+            "tile_width": 16,
+            "tile_height": 16,
+            "tileset_columns": 3
+        },
+        {
+            "id": "waterfall",
+            "image": "gentle_waterfall_A_v01.png",
+            "tile_width": 16,
+            "tile_height": 16,
+            "tileset_columns": 6
+        }
+    ],
+    "layers": [
+        {
+            "name": "Ground",
+            "text_map": "ground.csv"
+        },
+        {
+            "name": "Objects",
+            "text_map": "objects.csv"
+        }
+    ],
+      "Grid": {
+        "Grid_el_w": 16,
+        "Grid_el_h": 16
+      }
+    }
+  }
+}
